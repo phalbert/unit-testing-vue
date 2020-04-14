@@ -21,7 +21,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+    
+    # Runs yarn
+    - name: Install node modules
+      run: yarn
+        
     # Runs unit tests using jest
     - name: Runs unit tests
-      run: yarn test:unit
+      run: |
+        yarn
+        yarn test:unit
