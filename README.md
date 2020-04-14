@@ -63,3 +63,7 @@ const input = wrapper.find('[data-testid="name-input"]')
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## References
+
+1. [Adding badges for github actions](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#adding-a-workflow-status-badge-to-your-repository)
