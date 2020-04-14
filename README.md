@@ -43,5 +43,21 @@ test('If button is clicked, random number should be between 200 and 300', async 
     })
 ```
 
+- When working with multiple similar components like input elements, it may be tempting to find them in your tests using attributes like `id` or `name`. However, if these were to change in the future, your tests would. A future proof solution would a `data-testid` attr. e.g.
+
+```javascript
+// Feature.vue
+...
+<input data-testid='name-input' type='text' v-model='name'>
+...
+
+//Feature.spec.js
+...
+const wrapper = mount(Feature)
+const input = wrapper.find('[data-testid="name-input"]')
+...
+```
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
