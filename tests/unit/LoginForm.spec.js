@@ -11,7 +11,6 @@ describe('LoginForm.vue', () => {
         wrapper.trigger('submit')
 
         const formSubmittedCalls = wrapper.emitted('formSubmitted')
-        console.log(formSubmittedCalls)
         expect(formSubmittedCalls).toHaveLength(1)
     })
 

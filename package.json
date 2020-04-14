@@ -6,10 +6,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "test:coverage": "vue-cli-service test:unit --coverage",
+    "lint": "vue-cli-service lint",
+    "server": "node_modules/.bin/json-server --watch db.json"
   },
   "dependencies": {
+    "@olavoparno/jest-badges-readme": "^1.4.1",
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
+    "global": "^4.4.0",
+    "json-server": "^0.16.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
