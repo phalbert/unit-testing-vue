@@ -1,5 +1,7 @@
 # unit-testing-vue
 
+![](https://github.com/phalbert/unit-testing-vue/workflows/CI/badge.svg)
+
 ## Project setup
 ```
 yarn install
